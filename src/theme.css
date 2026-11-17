@@ -2306,10 +2306,10 @@ body:has(section.present[data-background-color="#f0ece2"]) {
   line-height: 1.4;
 }
 
-/* Mummel-Wortmarke (Platzhalter bis Logo-Datei vorliegt) */
+/* Mummel als neutraler Schriftzug – bewusst ohne eigene Markenfarbe */
 .title-slide .logo-wuw.wordmark.mummel-wordmark {
-  color: #e2553c;
-  letter-spacing: -0.02em;
+  color: var(--ep-ink);
+  font-weight: 700;
 }
 
 /* Mummel-Pitch: Varianten */
@@ -2330,3 +2330,64 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 
 /* Mummel-Pitch: keine Einblend-Animationen – jede Folie steht sofort komplett */
 .reveal .slides section.present > * { animation: none !important; }
+
+/* Mummel-Pitch: Tabellen, Tags, Spalten */
+.reveal table.calc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.6em;
+  margin: 10px 0 6px;
+}
+.reveal table.calc-table th,
+.reveal table.calc-table td {
+  border: none;
+  border-bottom: 1px solid var(--ep-border);
+  padding: 7px 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.35;
+}
+.reveal table.calc-table th {
+  font-family: var(--ep-font-display);
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ep-ink-soft);
+  border-bottom: 2px solid var(--ep-border);
+}
+.reveal table.calc-table td.num,
+.reveal table.calc-table th.num { text-align: right; white-space: nowrap; }
+.reveal table.calc-table tr.total td { font-weight: 700; border-bottom: none; border-top: 2px solid var(--ep-border); }
+.reveal table.calc-table tr.hl td { background: var(--ep-primary-soft); }
+.reveal .tag {
+  display: inline-block;
+  font-size: 0.78em;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--ep-bg-soft);
+  border: 1px solid var(--ep-border);
+  color: var(--ep-ink-soft);
+  white-space: nowrap;
+}
+.reveal .tag.komplett { background: var(--ep-primary-soft); color: var(--ep-primary-dk); border-color: transparent; }
+.reveal .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.reveal .three-col > * { min-width: 0; }
+.reveal .col-box {
+  border: 1px solid var(--ep-border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: var(--ep-bg);
+  font-size: 0.66em;
+}
+.reveal .col-box h3 { font-size: 1.15em; margin-bottom: 8px; }
+.reveal .col-box ul { margin: 0; padding-left: 1.1em; }
+.reveal .col-box li { margin-bottom: 5px; }
+.reveal .lead-text { font-size: 0.78em; color: var(--ep-ink-soft); max-width: 88%; margin-bottom: 14px; }
+.reveal .compare.tight > div { padding: 16px 18px; }
+.reveal .compare.tight ul { font-size: 0.68em; margin-bottom: 0; }
+.reveal .compare.tight li { margin-bottom: 5px; }
+
+.reveal .roi-flow.words .roi-value { font-size: 1.12em; white-space: nowrap; }
+.reveal .roi-flow.words .roi-step { padding: 16px 10px; }

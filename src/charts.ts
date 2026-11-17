@@ -60,7 +60,7 @@ function initBudgetDonut() {
   if (!el || charts.has('budget')) return;
 
   const data = [40, 25, 20, 15];                        // Anteil Content-Säulen in %
-  const labels = ['Mummel entsteht', 'Extrem normal', 'Deine Geschichte', 'Design & Machen'];
+  const labels = ['Mummel entsteht', 'Extrem normal', 'Deine Geschichte', 'Machen & Gestalten'];
   const total = data.reduce((a, b) => a + b, 0);
 
   const chart = new Chart(el, {
