@@ -2327,3 +2327,6 @@ body:has(section.present[data-background-color="#f0ece2"]) {
 section[data-background-color="#161a2c"] .roi-step.accent .roi-value { color: var(--ep-accent); }
 section[data-background-color="#161a2c"] .roi-step.accent .roi-label { color: rgba(255,255,255,0.85); }
 section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { color: rgba(255,255,255,0.55); }
+
+/* Mummel-Pitch: keine Einblend-Animationen – jede Folie steht sofort komplett */
+.reveal .slides section.present > * { animation: none !important; }

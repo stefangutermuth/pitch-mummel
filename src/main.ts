@@ -35,9 +35,9 @@ const deck = new Reveal({
   center: false,
   // Linear: Rechts/Links blättern durch ALLE Folien & Unterfolien (inkl. Fragmente)
   navigationMode: 'linear',
-  transition: prefersReducedMotion ? 'none' : 'slide',
+  transition: 'none', // Mummel-Pitch: ohne Animation
   transitionSpeed: 'default',
-  backgroundTransition: prefersReducedMotion ? 'none' : 'fade',
+  backgroundTransition: 'none',
   pdfSeparateFragments: false,
   width: 1280,
   height: 800,
@@ -60,7 +60,7 @@ function differentiateTransitions() {
     .querySelectorAll<HTMLElement>('.reveal .slides > section > section')
     .forEach((sec) => {
       if (!sec.hasAttribute('data-transition')) {
-        sec.setAttribute('data-transition', 'fade');
+        sec.setAttribute('data-transition', 'none');
       }
     });
 }

@@ -79,7 +79,7 @@ function initBudgetDonut() {
       responsive: true,
       maintainAspectRatio: false,
       cutout: '62%',
-      animation: { duration: 1100, easing: 'easeOutQuart' },
+      animation: false,
       plugins: {
         legend: {
           position: 'right',
@@ -123,7 +123,7 @@ function initResultsChart() {
       responsive: true,
       maintainAspectRatio: false,
       indexAxis: 'y',
-      animation: { duration: 1000, easing: 'easeOutQuart' },
+      animation: false,
       scales: {
         x: {
           beginAtZero: true,
@@ -200,7 +200,7 @@ function initTrendsChart() {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      animation: { duration: 1300, easing: 'easeOutQuart' },
+      animation: false,
       plugins: {
         legend: {
           display: true,
