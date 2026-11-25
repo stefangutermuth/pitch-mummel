@@ -2431,3 +2431,12 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 .reveal .tb-row.hl .tb-bar { background: var(--ep-primary-dk); }
 .reveal .tb-axis { display: grid; grid-template-columns: 34% 1fr; gap: 18px; margin-top: 4px; }
 .reveal .tb-axis > div { display: flex; justify-content: space-between; color: var(--ep-muted); font-size: 0.8em; }
+
+/* Google-Phasen (11.3) */
+.reveal .col-box .phase-tag { display: inline-block; font-size: .78em; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ep-ink-mute, #9aa0b2); margin-bottom: 4px; }
+.reveal .col-box.rec { border-color: var(--ep-primary); background: var(--ep-primary-soft, #e6f4f3); }
+.reveal .col-box.off { opacity: .75; }
+.reveal .col-box .budget { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--ep-border); font-weight: 600; }
+.reveal .col-box p { margin: 0 0 6px; line-height: 1.45; }
+.reveal .gphase .col-box { font-size: 0.6em; padding: 14px 16px; }
+.reveal .gphase .col-box h3 { margin-bottom: 6px; }
