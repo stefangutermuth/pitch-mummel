@@ -2445,3 +2445,9 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 .reveal .title-slide h1 { font-size: 2.25em; }
 .reveal s.rate-old { color: var(--ep-ink-mute, #9aa0b2); text-decoration-thickness: 2px; margin-right: 2px; }
 .reveal .rate-line { font-size: 0.62em; margin: -6px 0 12px; }
+
+/* Saubere Umbrüche: keine einzelnen Wörter in der letzten Zeile */
+.reveal h1, .reveal h2, .reveal h3 { text-wrap: balance; }
+.reveal p, .reveal li, .reveal td, .reveal .note-box { text-wrap: pretty; }
+.reveal .list-text p, .reveal .checklist li, .reveal .card p, .reveal .col-box p, .reveal td, .reveal .term, .reveal .note-box { text-wrap: balance; }
+.reveal .micro { text-wrap: balance; }
