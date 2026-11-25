@@ -107,7 +107,7 @@ function buildChapterRail() {
     const btn = document.createElement('button');
     btn.className = 'chapter-node';
     btn.type = 'button';
-    btn.setAttribute('aria-label', `Kapitel ${i + 1} — ${chapterTitles[i] || ''}`);
+    btn.setAttribute('aria-label', `Kapitel ${i + 1}: ${chapterTitles[i] || ''}`);
     btn.title = `${String(i + 1).padStart(2, '0')} · ${chapterTitles[i] || ''}`;
     btn.innerHTML =
       `<span class="bar"><span class="sub-ticks"></span></span>` +
