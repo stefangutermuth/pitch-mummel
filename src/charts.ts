@@ -235,11 +235,45 @@ function initTrendsChart() {
   charts.set('trends', chart);
 }
 
+// Gestapelte Säulen: Gesamtkosten Basis/Komplett inkl. Werbebudget (Richtwerte, netto)
+function initTotalChart() {
+  const el = document.getElementById('chart-total') as HTMLCanvasElement | null;
+  if (!el || charts.has('total')) return;
+  const eur = (v: number) => `${v.toLocaleString('de-DE')} €`;
+  const chart = new Chart(el, {
+    type: 'bar',
+    data: {
+      labels: ['Basis', 'Komplett'],
+      datasets: [
+        { label: 'Agenturhonorar', data: [5650, 10250], backgroundColor: COLORS.primaryDk, borderRadius: 4, barThickness: 90 },
+        { label: 'Werbebudget, unterer Richtwert', data: [2100, 2100], backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 90 },
+        { label: 'Werbebudget, oberer Richtwert', data: [1900, 1900], backgroundColor: 'rgba(92,184,181,0.35)', borderRadius: 4, barThickness: 90 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      scales: {
+        x: { stacked: true, grid: { display: false }, ticks: { color: COLORS.ink, font: { ...baseFont, weight: 700 } } },
+        y: { stacked: true, beginAtZero: true, max: 16000, grid: { color: COLORS.border },
+             ticks: { color: COLORS.muted, callback: (v) => eur(Number(v)) } }
+      },
+      plugins: {
+        legend: { display: true, position: 'bottom', labels: { usePointStyle: true, boxWidth: 10, font: { ...baseFont, size: 11 } } },
+        tooltip: { callbacks: { label: (c) => ` ${c.dataset.label}: ${eur(c.parsed.y)}` } }
+      }
+    }
+  });
+  charts.set('total', chart);
+}
+
 export function activateChartsForSlide(slide: Element | null) {
   if (!slide) return;
   if (slide.querySelector('#chart-budget')) initBudgetDonut();
   if (slide.querySelector('#chart-results')) initResultsChart();
   if (slide.querySelector('#chart-trends')) initTrendsChart();
+  if (slide.querySelector('#chart-total')) initTotalChart();
 }
 
 // Re-animiert die Charts auf der gerade aktiven Folie.
