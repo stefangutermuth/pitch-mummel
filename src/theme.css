@@ -2396,3 +2396,38 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 .reveal .card.card-secondary { opacity: 0.55; filter: grayscale(1); }
 .reveal .card.card-secondary .icon { background: var(--ep-ink-soft); }
 .reveal .card.card-secondary .tag { font-size: 0.6em; vertical-align: middle; margin-left: 4px; }
+
+/* ---- Mummel-Pitch: Icons, Logos, Typografie ---- */
+.reveal .card .icon svg { width: 20px; height: 20px; }
+.reveal .card .icon .brand-ico-w { width: 18px; height: 18px; }
+.reveal .brand-ico { width: 0.95em; height: 0.95em; vertical-align: -0.14em; margin-right: 0.2em; display: inline-block; }
+.reveal h2 .brand-ico { width: 0.8em; height: 0.8em; vertical-align: -0.05em; margin-right: 0.15em; }
+.reveal .logo-row { display: flex; gap: 12px; justify-content: center; padding-top: 6px; }
+.reveal .logo-row .brand-ico { width: 1.6em; height: 1.6em; margin: 0; }
+.reveal .brand-line .brand-ico { width: 1.05em; height: 1.05em; }
+.reveal .card h3, .reveal .card p { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+.reveal .card-grid.cols-4 { gap: 14px; }
+.reveal .card-grid.cols-4 .card { padding: 16px 16px 18px; }
+.reveal .card-grid.cols-4 .card h3 { font-size: 0.8em; line-height: 1.2; margin-bottom: 6px; }
+.reveal .card-grid.cols-4 .card p { font-size: 0.6em; line-height: 1.45; }
+.reveal .card-grid.cols-3 .card p { font-size: 0.62em; line-height: 1.45; }
+.reveal .card-grid.compact { gap: 12px; margin-top: 16px; }
+.reveal .card-grid.compact .card { padding: 14px 16px; }
+.reveal .card-grid.compact .card h3 { font-size: 0.74em; }
+.reveal .card-grid.compact .card .icon { width: 30px; height: 30px; margin-bottom: 8px; }
+.reveal .list-text { font-size: 0.64em; }
+.reveal .list-text p { margin: 0 0 8px; }
+.reveal .term { font-size: 0.52em; color: var(--ep-muted); margin-top: 12px; }
+.reveal .term .tag { font-size: 0.85em; margin-right: 4px; }
+.reveal .pkg-text { font-size: 0.66em; margin: 0; color: inherit; }
+.reveal .compare .you .pkg-text { color: rgba(255,255,255,0.92); }
+/* Zeitaufwand als Balken */
+.reveal .time-bars { margin-top: 18px; font-size: 0.62em; }
+.reveal .tb-row { display: grid; grid-template-columns: 34% 1fr; gap: 18px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--ep-border); }
+.reveal .tb-label strong { display: block; color: var(--ep-ink); }
+.reveal .tb-label span { color: var(--ep-muted); font-size: 0.88em; }
+.reveal .tb-track { position: relative; height: 30px; background: repeating-linear-gradient(90deg, transparent 0 calc(100%/3 - 1px), var(--ep-border) calc(100%/3 - 1px) calc(100%/3)); }
+.reveal .tb-bar { position: absolute; top: 3px; bottom: 3px; left: calc(var(--from) / 15 * 100%); width: calc((var(--to) - var(--from)) / 15 * 100%); min-width: 92px; background: var(--ep-primary); color: #fff; border-radius: 8px; font-weight: 700; font-size: 0.85em; display: flex; align-items: center; justify-content: center; white-space: nowrap; }
+.reveal .tb-row.hl .tb-bar { background: var(--ep-primary-dk); }
+.reveal .tb-axis { display: grid; grid-template-columns: 34% 1fr; gap: 18px; margin-top: 4px; }
+.reveal .tb-axis > div { display: flex; justify-content: space-between; color: var(--ep-muted); font-size: 0.8em; }

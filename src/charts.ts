@@ -108,12 +108,12 @@ function initResultsChart() {
   const chart = new Chart(el, {
     type: 'bar',
     data: {
-      labels: ['Ziel 25.000 €', 'Ziel 50.000 €', 'Ziel 100.000 €'],
+      labels: ['Einzelbild', 'Karussell', 'Reel'],
       datasets: [
         {
-          label: 'Benötigte Einträge',
-          data: [3600, 7100, 14300], // Ziel ÷ 140 € ÷ 5 %, gerundet
-          backgroundColor: [COLORS.accent, COLORS.primary, COLORS.primaryDk],
+          label: 'Ø Reichweite pro Beitrag',
+          data: [4779, 11573, 14919], // Metricool Instagram-Studie 2026
+          backgroundColor: [COLORS.muted, COLORS.primary, COLORS.primaryDk],
           borderRadius: 8,
           barThickness: 30
         }
