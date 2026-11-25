@@ -2440,3 +2440,6 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 .reveal .col-box p { margin: 0 0 6px; line-height: 1.45; }
 .reveal .gphase .col-box { font-size: 0.6em; padding: 14px 16px; }
 .reveal .gphase .col-box h3 { margin-bottom: 6px; }
+
+/* Titel Mummel: genau zwei Zeilen */
+.reveal .title-slide h1 { font-size: 2.25em; }
