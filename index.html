@@ -172,30 +172,27 @@
         </section>
 
         <section>
-          <span class="eyebrow">6.2 · Rechenbeispiel Crowdfunding</span>
-          <h2>Was eine Warteliste rechnerisch bringen kann.</h2>
-          <table class="calc-table">
-            <thead>
-              <tr><th>Szenario</th><th class="num">Einträge</th><th class="num">davon unterstützen</th><th class="num">Ø Betrag</th><th class="num">Summe (brutto)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Vorsichtig</td><td class="num">1.500</td><td class="num">2 % = 30</td><td class="num">140 €</td><td class="num">4.200 €</td></tr>
-              <tr class="hl"><td>Mittel – unter unseren Annahmen</td><td class="num">2.000</td><td class="num">5 % = 100</td><td class="num">140 €</td><td class="num">14.000 €</td></tr>
-              <tr><td>Optimistisch</td><td class="num">3.000</td><td class="num">10 % = 300</td><td class="num">140 €</td><td class="num">42.000 €</td></tr>
-            </tbody>
-          </table>
-          <p class="muted" style="font-size: 0.56em; margin-bottom: 10px;">Zum Vergleich bei 5 %: 1.500 → 10.500 € · 2.000 → 14.000 € · 3.000 → 21.000 € · 3.600 → 25.200 €</p>
-          <div class="two-col" style="grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
-            <div class="note-box" style="font-size: 0.62em; margin: 0;">
-              <strong>Modellannahmen, keine Erfahrungswerte für Mummel:</strong> Üblich sind etwa 1–5 % von der Liste zur Unterstützerin, bei sehr enger Bindung mehr.
-              Der Betrag von 140 € ist eine Annahme. Unterstützung von außerhalb der Liste ist nicht eingerechnet.
+          <span class="eyebrow">6.2 · Crowdfunding – wie die Rechnung funktioniert</span>
+          <h2>Was ein Crowdfunding bringt, hängt von drei Werten ab.</h2>
+          <div class="roi-flow words">
+            <div class="roi-step"><div class="roi-value">Einträge</div><div class="roi-label">auf der<br/><span class="muted">Warteliste</span></div></div>
+            <div class="roi-arrow">×</div>
+            <div class="roi-step"><div class="roi-value">Anteil</div><div class="roi-label">der wirklich<br/><span class="muted">unterstützt</span></div></div>
+            <div class="roi-arrow">×</div>
+            <div class="roi-step"><div class="roi-value">Ø Betrag</div><div class="roi-label">pro<br/><span class="muted">Unterstützerin</span></div></div>
+            <div class="roi-arrow">=</div>
+            <div class="roi-step accent"><div class="roi-value">Summe</div><div class="roi-label">vor<br/><span class="muted">allen Abzügen</span></div></div>
+          </div>
+          <div class="two-col" style="grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; margin-top: 18px;">
+            <div class="note-box" style="font-size: 0.64em; margin: 0;">
+              <strong>Heute kennen wir keinen der drei Werte.</strong> Wir rechnen sie gemeinsam mit deinen Zahlen durch, sobald Preis, Mindestbestellmenge und Größe der Warteliste absehbar sind.
+              Zur Orientierung: Bei anderen Kampagnen unterstützt meist nur ein kleiner Teil der Liste.
             </div>
-            <div class="note-box" style="font-size: 0.62em; margin: 0;">
-              <strong>Davon gehen noch ab:</strong> Plattform- und Zahlungsgebühren (bei Startnext im Schnitt rund 5 %), Produktion, Verpackung, Versand und eine Reserve.
-              Das Fundingziel leiten wir gemeinsam aus deiner Kalkulation und der Mindestbestellmenge ab.
+            <div class="note-box" style="font-size: 0.64em; margin: 0;">
+              <strong>Davon gehen noch ab:</strong> Plattform- und Zahlungsgebühren, Produktion, Verpackung, Versand und eine Reserve.
+              Das Fundingziel leiten wir gemeinsam aus deiner Kalkulation ab.
             </div>
           </div>
-          <p class="muted micro">Quellen: BackerKit, PledgeBox, Startnext. Das Ergebnis hängt von Produktpreis, Nachfrage, Reichweite und Qualität der Kampagne ab.</p>
         </section>
       </section>
 
@@ -543,23 +540,7 @@
         </section>
 
         <section>
-          <span class="eyebrow">Anhang D · Crowdfunding-Rechnung andersherum</span>
-          <h2>Wie groß muss die Liste für ein bestimmtes Ziel sein?</h2>
-          <div class="two-col" style="grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: start;">
-            <div>
-              <div class="chart-wrap bars" style="height: 250px;"><canvas id="chart-results"></canvas></div>
-              <p class="muted micro">Benötigte Einträge bei 5 % Anteil und Ø 140 € · gerundet</p>
-            </div>
-            <div style="font-size: 0.68em;">
-              <p><strong>Rechenweg:</strong> Fundingziel ÷ 140 € = benötigte Unterstützerinnen. Diese Zahl ÷ 5 % = benötigte Einträge.</p>
-              <p>Beispiel: 25.000 € ÷ 140 € ≈ 180 Unterstützerinnen ÷ 5 % ≈ 3.600 Einträge.</p>
-              <p class="muted">Gleiche Modellannahmen wie in Abschnitt 6 – keine Erfahrungswerte für Mummel.</p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <span class="eyebrow">Anhang E · Woran wir den Fortschritt messen</span>
+          <span class="eyebrow">Anhang D · Woran wir den Fortschritt messen</span>
           <h2>Fünf Zahlen, die wir monatlich ansehen.</h2>
           <table class="calc-table" style="font-size: 0.64em;">
             <thead><tr><th>Zahl</th><th>Was sie zeigt</th><th>Zielwert bis Ende Februar</th></tr></thead>
@@ -575,7 +556,7 @@
         </section>
 
         <section>
-          <span class="eyebrow">Anhang F · Begriffe kurz erklärt</span>
+          <span class="eyebrow">Anhang E · Begriffe kurz erklärt</span>
           <h2>Fachwörter, die dir begegnen werden.</h2>
           <table class="calc-table" style="font-size: 0.62em;">
             <tbody>
@@ -584,7 +565,7 @@
               <tr><td><strong>Conversion</strong></td><td>Wenn jemand den nächsten Schritt macht, etwa sich einträgt oder unterstützt. Die Conversion-Rate ist der Anteil in Prozent.</td></tr>
               <tr><td><strong>Engagement</strong></td><td>Reaktionen auf Beiträge: Kommentare, Speichern, Teilen, Likes.</td></tr>
               <tr><td><strong>Retargeting</strong></td><td>Anzeigen an Menschen, die schon einmal Kontakt mit Mummel hatten.</td></tr>
-              <tr><td><strong>KPI</strong></td><td>Eine Kennzahl, an der wir Fortschritt messen – siehe Anhang E.</td></tr>
+              <tr><td><strong>KPI</strong></td><td>Eine Kennzahl, an der wir Fortschritt messen – siehe Anhang D.</td></tr>
               <tr><td><strong>Ads-Setup</strong></td><td>Das Einrichten von Werbekonto, Messung und ersten Anzeigen (Baustein G).</td></tr>
               <tr><td><strong>Content-Säule</strong></td><td>Ein fester Themenbereich, aus dem Beiträge entstehen – siehe Abschnitt 5.</td></tr>
             </tbody>
@@ -592,14 +573,14 @@
         </section>
 
         <section>
-          <span class="eyebrow">Anhang G · Quellen</span>
+          <span class="eyebrow">Anhang F · Quellen</span>
           <h2>Woher die Zahlen kommen.</h2>
           <ul style="font-size: 0.6em;">
             <li>Barmer-Arztreport 2026: rund 510.000 Frauen mit gesicherter Endometriose-Diagnose im Jahr 2024</li>
             <li>Endometriose-Vereinigung Deutschland: rund 2 Mio. Betroffene (Schätzung), im Schnitt acht Jahre bis zur Diagnose</li>
             <li>endomarch.org: Worldwide EndoMarch am 20. März 2027</li>
             <li>Metricool Instagram-Studie 2026: Format-, Timing- und Interaktionswerte</li>
-            <li>BackerKit und PledgeBox: übliche Anteile von E-Mail-Listen zu Unterstützerinnen</li>
+            <li>BackerKit und PledgeBox: Erfahrungen, welcher Anteil einer E-Mail-Liste eine Kampagne unterstützt</li>
             <li>Startnext: Transaktionskosten (Stand 2024)</li>
             <li>BAFA: Förderung von Unternehmensberatungen für KMU, Programmseite und Richtlinie (Änderung vom 15.10.2026)</li>
             <li>Meta: Einschränkungen für Gesundheitsthemen bei Messung und Zielgruppen in der EU (seit 2025)</li>
