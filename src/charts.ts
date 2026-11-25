@@ -245,7 +245,7 @@ function initTotalChart() {
     data: {
       labels: ['Basis', 'Komplett'],
       datasets: [
-        { label: 'Agenturhonorar', data: [5650, 10250], backgroundColor: COLORS.primaryDk, borderRadius: 4, barThickness: 90 },
+        { label: 'Agenturhonorar', data: [5640, 10240], backgroundColor: COLORS.primaryDk, borderRadius: 4, barThickness: 90 },
         { label: 'Werbebudget, unterer Richtwert', data: [2100, 2100], backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 90 },
         { label: 'Werbebudget, oberer Richtwert', data: [1900, 1900], backgroundColor: 'rgba(92,184,181,0.35)', borderRadius: 4, barThickness: 90 }
       ]

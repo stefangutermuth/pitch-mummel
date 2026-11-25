@@ -2443,3 +2443,5 @@ section[data-background-color="#161a2c"] .roi-step.accent .roi-label .muted { co
 
 /* Titel Mummel: genau zwei Zeilen */
 .reveal .title-slide h1 { font-size: 2.25em; }
+.reveal s.rate-old { color: var(--ep-ink-mute, #9aa0b2); text-decoration-thickness: 2px; margin-right: 2px; }
+.reveal .rate-line { font-size: 0.62em; margin: -6px 0 12px; }
